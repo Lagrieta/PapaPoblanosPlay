@@ -45,7 +45,7 @@ function preload(){
 
 function setup() {
   //Logra hacer responsivo el espacio visual
-  createCanvas(1280, 450);
+  createCanvas(1280, 475);
   
   //haz responsivo al Trex
   trex = createSprite(50,height-70,20,50);
@@ -181,7 +181,7 @@ function spawnClouds() {
     cloud.scale = 0.1;
     cloud.velocityX = -3;
     
-    cloud.lifetime = 200;
+    cloud.lifetime = 600;
     
     cloud.depth = trex.depth;
     trex.depth = trex.depth + 1;
