@@ -45,7 +45,7 @@ function preload(){
 
 function setup() {
   //Logra hacer responsivo el espacio visual
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1280, 720);
   
   //haz responsivo al Trex
   trex = createSprite(50,height-70,20,50);
