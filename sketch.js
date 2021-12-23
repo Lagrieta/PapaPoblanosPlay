@@ -47,12 +47,16 @@ function setup() {
   //Logra hacer responsivo el espacio visual
   createCanvas(1280, 475);
   
+  PPG = createSprite(250,65);
+  PPG.addImage(PPGImg);
+  PPG.scale = 0.4;
+  
   //haz responsivo al Trex
   trex = createSprite(50,height-70,20,50);
   
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
-  trex.scale = 0.5;
+  trex.scale = 0.6;
   
   //haz responsivo el suelo
   ground = createSprite(width/2,height-110,width,112);
@@ -256,7 +260,7 @@ function spawnTesoros() {
       default: break;
     }
            
-    Tesoros.scale = 0.1;
+    Tesoros.scale = 0.2;
     Tesoros.lifetime = 300;
 
     TesorosGroup.add(Tesoros);
