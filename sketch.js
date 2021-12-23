@@ -8,7 +8,7 @@ var ground, invisibleGround, groundImage, visibleGround;
 var cloudsGroup, cloudImage;
 var obstaclesGroup, obstacle1, obstacle2, obstacle3, obstacle4, obstacle5, obstacle6;
 var nachos, burrito, taco, PP, guacamole, coin;
-var nachoG, burroG, tacoG, PPG, guaG, coinG, TesorosGroup;
+var PPG, PPGImg, TesorosGroup;
 var nachoImg, burroImg, tacoImg, PPImg, guacImg, coinImg;
 
 var score=0;
@@ -40,6 +40,7 @@ function preload(){
   PP = loadImage("PP-tipo.png");
   coin = loadImage("coin.png");
   guacamole = loadImage("guacamole.png");
+  PPGImg = loadImage("PP-tipo.png");
   
 }
 
